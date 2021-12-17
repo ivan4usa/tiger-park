@@ -1,0 +1,157 @@
+/*
+    Author: Ivan Poluboiarynov
+    Date: 04/19/2020
+*/
+.zoo-header_background {
+  background: url("../images/ticket-zoo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position: top;
+}
+
+.tikets {
+  text-align: center;
+}
+
+.tikets>div {
+  display: inline-block;
+  width: 70%;
+  background: #769e22;
+  border-radius: 20px;
+  margin: 0;
+}
+
+.tikets form {
+  padding: 0 1em;
+  border: 2px solid #4d6f05;
+  -webkit-box-shadow: 0px 0px 10px 1px black;
+          box-shadow: 0px 0px 10px 1px black;
+  border-radius: 20px;
+}
+
+.tikets h2 {
+  color: white;
+}
+
+.tikets fieldset {
+  background-color: white;
+  margin: 1em 0;
+  border-radius: 20px;
+  border: 2px solid #4d6f05;
+  padding: 1em;
+}
+
+.tikets legend {
+  background-color: #b4c408;
+  padding: .2em .5em;
+  border-radius: 50px;
+  font-size: 1.4em;
+  color: white;
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 5px #b4c408;
+          box-shadow: 0 0 0 5px #b4c408;
+}
+
+.tikets_form_info label, .tikets_form_info input {
+  display: inline-block;
+  width: calc(50% - .4em);
+  margin: .5em 0;
+}
+
+.tikets form label {
+  font-size: 1.3em;
+  color: #769e22;
+}
+
+.tikets_form_info input {
+  padding: .3em .2em;
+  font-size: 1.1em;
+  color: #769e22;
+  border-radius: 20px;
+  border: 1px solid #769e22;
+  outline: none;
+}
+
+.tikets_form_radio label {
+  display: block;
+  margin: .2em 0;
+}
+
+.tikets_form_radio input {
+  max-width: 3em;
+}
+
+.tikets_form_radio div {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  text-align: left;
+  margin: auto;
+}
+
+.tikets_form_radio tr td:nth-child(2n+1) {
+  text-align: left;
+}
+
+#img-left, #img-right {
+  display: inline-block;
+  width: 10%;
+  margin: 0;
+  vertical-align: top;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#img-left {
+  margin-right: -5px;
+}
+
+#img-right {
+  margin-left: -5px;
+}
+
+.tikets_btn {
+  margin: 1.5em 0;
+}
+
+.tikets_btn input {
+  cursor: pointer;
+  margin: .3em 2em;
+  padding: .5em;
+  background: white;
+  border-radius: 50px;
+  outline: none;
+  font-size: 1.1em;
+  width: 8em;
+  background-color: #b4c408;
+  color: white;
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 5px #b4c408;
+          box-shadow: 0 0 0 5px #b4c408;
+}
+
+.tikets_btn input:hover, .tikets_btn input:focus {
+  background-color: #769e22;
+}
+
+.tikets_btn input:active {
+  -webkit-box-shadow: 0 0 0 5px #769e22;
+          box-shadow: 0 0 0 5px #769e22;
+}
+
+@media screen and (max-width: 540px) {
+  .tikets>div {
+    width: 100%;
+  }
+
+  #img-left, #img-right {
+    display: none;
+  }
+
+  .tikets_form_info label, .tikets_form_info input {
+    width: 100%;
+  }
+}

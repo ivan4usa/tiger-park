@@ -1,0 +1,175 @@
+/*
+    Author: Ivan Poluboiarynov
+    Date: 04/19/2020
+*/
+.zoo-header_background {
+  background: url("../images/gallery-zoo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position: top;
+}
+
+table img {
+  max-width: 100%;
+}
+
+main {
+  padding: 0;
+}
+
+.zoo-main {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.animals_h1 {
+  text-align: center;
+  color: green;
+}
+
+.animals p {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.animals_menu {
+  width: 100%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.animals_menu li {
+  display: inline-block;
+  margin: .5em;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  padding: .8em;
+}
+
+.animals_menu li:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px 5px #818c0a;
+          box-shadow: 0 0 5px 5px #818c0a;
+}
+
+.animals_menu img {
+  width: 7em;
+}
+
+.animals_menu span {
+  display: block;
+  color: white;
+  padding: .5em 1em;
+  background: #769e22;
+  border-radius: 20px;
+}
+
+.animals_table th {
+  border-top: 2px solid #769e22;
+  border-bottom: 2px solid #769e22;
+  padding: 1.5em 0;
+  background-color: #769e22;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.animals_table tr:first-child th {
+  background-image: url("../images/animals/background-tiger.jpg");
+}
+
+.animals_table tr:nth-child(3) th {
+  background-image: url("../images/animals/background-elephant.jpg");
+}
+
+.animals_table tr:nth-child(5) th {
+  background-image: url("../images/animals/background-giraffe.jpg");
+}
+
+.animals_table tr:nth-child(7) th {
+  background-image: url("../images/animals/background-bear.jpg");
+}
+
+.animals_table tr:nth-child(9) th {
+  background-image: url("../images/animals/background-rhinoceros.jpg");
+}
+
+.animals_table tr:nth-child(11) th {
+  background-image: url("../images/animals/background-zebra.jpg");
+}
+
+.animals_table_image, .animals_table_desc {
+  width: 50%;
+  vertical-align: top;
+}
+
+.animals_table_desc {
+  padding: 2em 1em;
+}
+
+.animal_copyright {
+  font-style: italic;
+  font-size: 1em;
+}
+
+.animals_table_image {
+  padding: 2em 0;
+}
+
+.animals_btn {
+  padding: .5em 5em;
+  display: inline-block;
+  border: 1px solid #769e22;
+  width: 3.5em;
+  margin: 1em auto;
+}
+
+.animal_table_btn-toTop {
+  color: #769e22;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.animal_table_btn-toTop:hover {
+  background-color: #7db900;
+  -webkit-box-shadow: 0 0 5px 2px #0000009e;
+          box-shadow: 0 0 5px 2px #0000009e;
+  color: white;
+}
+
+.animal_table_btn-toTop:active {
+  background-color: #7db900;
+  -webkit-box-shadow: 0 0 5px 2px transparent;
+          box-shadow: 0 0 5px 2px transparent;
+}
+
+@media screen and (max-width: 540px) {
+  .animals_table_image {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  .animals_table_desc {
+    width: calc(100% - 2em);
+    display: block;
+  }
+
+  .animals_btn {
+    display: block;
+  }
+}

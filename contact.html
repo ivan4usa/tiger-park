@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+    Author: Ivan Poluboiarynov
+    Date: 04/19/2020
+-->
+<html lang="en">
+
+<head>
+  <title>Tiger Park Zoo - Contact Us!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styleSheets/contact.css">
+  <link rel="stylesheet" type="text/css" href="styleSheets/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
+
+<body>
+  <img class="zoo_top-img" src="images/header.png" alt="palms">
+  <header class="zoo-header">
+    <div class="zoo-header_row">
+      <a class="zoo-header_a" href="index.html"><img class="zoo-header_logo" src="images/logo.svg" alt="logo"></a>
+      <nav class="zoo-header_nav">
+        <input type="checkbox" id="toggle" name="toggle" class="mobile-menu_toggle">
+        <label class="mobile-menu_toogle_label" for="toggle"><img src="images/menu.png" alt="menu"></label>
+        <ul class="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="animals.html">Our Animals</a></li>
+          <li><a href="tickets.html">Buy Ticket</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <a href="tel:5557778888" class="zoo-header_call">
+        <ul>
+          <li><img src="images/phone.svg" alt="phone icon"></li>
+          <li><span>(555) 777-8888</span></li>
+        </ul>
+      </a>
+
+      <div class="clear"></div>
+    </div>
+
+    <div class="zoo-header_background">
+      <h1 class="zoo-header_h1">Tiger Park Zoo - Contact Us</h1>
+    </div>
+  </header>
+
+  <main class="zoo-main">
+    <aside class="contact_form">
+      <h2>Contact Us</h2>
+      <form method="post" action="http://itins3.madisoncollege.edu/echo.php">
+
+        <label for="firstName">*First Name: <input id="firstName" type="text" name="firstName" maxlength="20" pattern="^[a-zA-Z\s-]+$" title="Name can include only letters, space and dash" required></label>
+
+        <label for="lastName">*Last Name: <input id="lastName" type="text" name="lastName" maxlength="20" pattern="^[a-zA-Z\s-]+$" title="Name can include only letters, space and dash" required></label>
+
+        <label for="email">*Email: <input id="email" type="email" name="email" maxlength="50" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$" title="Enter email in the format: example@mail.com" required></label>
+
+        <label for="phone">Phone: <input id="phone" type="text" name="phone" placeholder="xxx-xxx-xxxx" minlength="12" maxlength="12" pattern="^[\d]{3}-[\d]{3}-[\d]{4}$" title="Format: 123-123-1234"></label>
+
+        <label for="street">Street Address: <input id="street" type="text" name="street" maxlength="60"></label>
+
+        <label for="city">City: <input id="city" type="text" name="city" maxlength="20"></label>
+
+        <label for="state">State: <input id="state" type="text" name="state" placeholder="XX" maxlength="2" pattern="^[A-Z]{2}$" title="Enter State in the format: WI"></label>
+
+        <label for="zip">ZIP: <input id="zip" type="text" name="zip" placeholder="12345" maxlength="5" pattern="^[\d]{5}$" title="Enter 5 digits of your zip code"></label>
+
+
+        <label for="message">*Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+      </form>
+    </aside>
+
+    <aside class="contact_address">
+      <h2>Address</h2>
+      <p>
+        2050 Berlin Road, Milwaukee, Wisconsin, 53226<br>
+        <br>
+        General Information: (555) 123-4567<br>
+        Main Office: (555) 777-8888<br>
+        Marketing Department: (555) 777-7777<br>
+        Fax: (555) 777-7778<br>
+      </p>
+      <br>
+      <br>
+
+      <h2>Social Media</h2>
+      <p>Check us out on Facebook, Twitter, Instagram and YouTube:</p>
+      <ul>
+        <li><a href="http://www.facebook.com">
+            <img class="contact_img-social" src="images/social/facebook-128.png" alt="facebook link"></a></li>
+        <li><a href="https://twitter.com">
+            <img class="contact_img-social" src="images/social/twitter-128.png" alt="twitter link"></a></li>
+        <li><a href="https://instagram.com">
+            <img class="contact_img-social" src="images/social/instagram-128.png" alt="instagram link"></a></li>
+        <li><a href="http://www.youtube.com">
+            <img class="contact_img-social" src="images/social/youtube-128.png" alt="youtube link"></a></li>
+      </ul>
+    </aside>
+    <div class="contact_div"></div>
+  </main>
+
+  <footer class="zoo-footer">
+
+    <p>&copy; 2020 Tiger Park Zoo.<br> All rights reserved.</p>
+
+    <div>
+      <h3>Hours:</h3>
+      <p>Monday-Friday 9:30 a.m. to 2:30 p.m.<br>
+        Saturday-Sunday 9:30 a.m. to 4:30 p.m.
+      </p>
+    </div>
+
+    <ul>
+      <li><a href="https://www.facebook.com" target="_blank"><img src="images/social/facebook.png" alt="Facebook"></a></li>
+      <li><a href="https://twitter.com" target="_blank"><img src="images/social/twitter.png" alt="Twitter"></a></li>
+      <li><a href="https://www.youtube.com" target="_blank"><img src="images/social/youtube.png" alt="YouTube"></a></li>
+      <li><a href="https://instagram.com" target="_blank"><img src="images/social/instagram.png" alt="Instagram"></a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+/*
+    Author: Ivan Poluboiarynov
+    Date: 04/19/2020
+*/
+.zoo-header_background {
+  background: url("../images/contact-zoo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position: top;
+}
+
+.contact_form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 0 1em 5em 1em;
+}
+
+.contact_address {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: right;
+  width: 50%;
+  margin: 0;
+  padding: 0 1em 5em 1em;
+}
+
+.contact_address ul {
+  white-space: nowrap;
+}
+
+.contact_address li {
+  display: inline-block;
+  width: 25%;
+}
+
+.contact_div {
+  clear: both;
+}
+
+.contact_img-social {
+  width: 80%;
+  max-width: 80px;
+  margin: 10px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.contact_img-social:hover {
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.contact_form input, .contact_form label, .contact_form textarea {
+  display: block;
+  width: 100%;
+}
+
+.contact_form label {
+  margin: 1em 0 .3em 0;
+  font-size: 1.3em;
+  color: #769e22;
+}
+
+.contact_form input, .contact_form textarea {
+  border-radius: 20px;
+  border: 1px solid #769e22;
+  outline: none;
+  padding: .3em .2em;
+  color: #769e22;
+}
+
+.contact_form input {
+  font-size: 0.8em;
+}
+
+.contact_form textarea {
+  height: 15em;
+  font-size: 1.3em;
+}
+
+.contact_form input[type="submit"], .contact_form input[type="reset"] {
+  display: inline-block;
+  cursor: pointer;
+  width: auto;
+  margin: 2em auto;
+  padding: .5em 1.5em;
+  background-color: white;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.contact_form input[type="submit"]:hover, .contact_form input[type="reset"]:hover,
+.contact_form input[type="submit"]:focus, .contact_form input[type="reset"]:focus {
+  background-color: #769e22;
+  color: white;
+}
+
+.contact_form input[type="submit"] {
+  float: left;
+  margin-left: 5em;
+}
+
+.contact_form input[type="reset"] {
+  float: right;
+  margin-right: 5em;
+}
+
+.contact_form label[for="state"], .contact_form label[for="firstName"], .contact_form label[for="email"] {
+  float: left;
+  width: 47%;
+  margin-bottom: 1em;
+}
+
+.contact_form label[for="zip"], .contact_form label[for="lastName"], .contact_form label[for="phone"] {
+  float: right;
+  width: 47%;
+  margin-bottom: 1em;
+}
+
+.contact_form label[for="street"], .contact_form label[for="email"], .contact_form label[for="message"] {
+  clear: both;
+}
+
+.contact_form label[for="firstName"], .contact_form label[for="lastName"], .contact_form label[for="email"], .contact_form label[for="message"] {
+  font-weight: bold;
+}
+
+.contact_form label[for="email"], .contact_form label[for="phone"] {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .contact_form input[type="submit"] {
+    margin-left: 2.8em;
+  }
+
+  .contact_form input[type="reset"] {
+    margin-right: 2.8em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_form, .contact_address {
+    width: 100%;
+  }
+
+  .contact_form input[type="submit"] {
+    margin-left: 2em;
+  }
+
+  .contact_form input[type="reset"] {
+    margin-right: 2em;
+  }
+}

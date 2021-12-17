@@ -1,0 +1,65 @@
+/*
+    Author: Ivan Poluboiarynov
+    Date: 04/19/2020
+*/
+section {
+  clear: both;
+}
+
+.zoo-header_background {
+  background: url("../images/about-zoo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position: top;
+}
+
+.zoo-main>div {
+  text-align: center;
+}
+
+.about_img-left {
+  float: left;
+  width: 20%;
+  margin: 0 1em 1em 0;
+}
+
+.about_img-right {
+  float: right;
+  width: 20%;
+  margin: 0 0 1em 1em;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.about_ul {
+  list-style-image: url("../images/about/paw.png");
+  padding: 0 25%;
+}
+
+.about_ul li {
+  margin: 1em 0;
+}
+
+.about_logo {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  .about_img-left {
+    display: none;
+  }
+
+  .about_img-right {
+    margin: 1em auto;
+    float: none;
+    width: 80%;
+    display: block;
+  }
+
+  .about_ul {
+    padding: 0 2em;
+  }
+}
